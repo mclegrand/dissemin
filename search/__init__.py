@@ -94,9 +94,13 @@ class SearchQuery(ElasticsearchSearchQuery):
         _aggregation_results attribute.
         """
         final_query = self.build_query()
+        print("--debug-- ES search query")
+        print(final_query)
         search_kwargs = self.build_params(*args, **kwargs)
 
         results = self.backend.search(final_query, **search_kwargs)
+        print("--debug-- ES results")
+        print(results)
         self._results = results.get('results', [])
         self._hit_count = results.get('hits', 0)
         self._facet_counts = self.post_process_facets(results)
