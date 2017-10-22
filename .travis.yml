@@ -13,7 +13,6 @@ python:
 services:
   - postgresql
   - redis
-  - elasticsearch
 
 sudo: false
 
