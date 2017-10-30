@@ -114,7 +114,7 @@ h1
 
 .questions p, .questions h2
 {
-    text-align: left;
+    text-align: start;
 }
 
 .questions
@@ -156,7 +156,7 @@ h1
 
 .slide .ulCenter
 {
-    text-align: left;
+    text-align: start;
     margin: auto;
     width: 800px;
 }
